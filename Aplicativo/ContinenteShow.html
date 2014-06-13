@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+        <title>DC no Mundo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css">
+        <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+        </script>
+</head>
+     
+     
+    <body onLoad="foo();MM_preloadImages('Img/MapaMundiMiniV2.png','Img/AmericaNorteV2.png')">
+  
+        
+        
+        
+        
+        
+        
+        <div id="site">
+            <header id="topo">
+                
+                 <center>
+                  <table width="260" border="0" cellspacing="2" cellpadding="2" align="center">
+                    <tr>
+                      <td><img src="Img/DCnomundoMini.png"></td>
+                    </tr>
+                  </table>
+              </center>
+                  
+             
+          </header>
+             
+
+            <section id="conteudo">
+
+             
+                <article>
+                
+                <div id="Mapa">
+                
+                
+                
+               <script type="text/javascript">
+				
+function getParam ( sname )
+{
+  var params = location.search.substr(location.search.indexOf("?")+1);
+  var sval = "";
+  params = params.split("&");
+    // split param and value into individual pieces
+    for (var i=0; i<params.length; i++)
+       {
+         temp = params[i].split("=");
+         if ( [temp[0]] == sname ) { sval = temp[1]; }
+       }
+  return sval;
+}
+
+
+function foo()
+{
+  var bar = getParam("Continente");
+ // alert(bar);
+  
+  
+
+if (bar=="AmericaNorte") {
+	document.getElementById("Mapa").innerHTML += "<span class='ContinentesCentralizados'><a href='Link'><img src='Img/AmericaNorteDestaque.png' alt='America do Norte' id='AmericaNorte'></a></div></span>";
+	document.getElementById("Mapa").innerHTML += "<span class='Canada'><a href='link' class='LinkMapa'>Canada</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='EstadosUnidos'><a href='link' class='LinkMapa'>Estados Unidos</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Mexico'><a href='link' class='LinkMapa'>M&eacute;xico</a></span>"
+
+}else if (bar=="AmericaSul") {
+	document.getElementById("Mapa").innerHTML += "<span class='ContinentesCentralizadosAmericaSul'><a href='Link'><img src='Img/AmericaSulDestaque.png' alt='America do Sul' id='AmericaSul'></a></div></span>";
+	document.getElementById("Mapa").innerHTML += "<span class='Brasil'><a href='link' class='LinkMapa'>Brasil</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Argentina'><a href='link' class='LinkMapa'>Argentina</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Colombia'><a href='link' class='LinkMapa'>Col&ocirc;mbia</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Chile'><a href='link' class='LinkMapa'>Chile</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Uruguai'><a href='link' class='LinkMapa'>Uruguay</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Paraguay'><a href='link' class='LinkMapa'>Paraguay</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Bolivia'><a href='link' class='LinkMapa'>Bolivia</a></span>"	
+	document.getElementById("Mapa").innerHTML += "<span class='Equador'><a href='link' class='LinkMapa'>Equador</a></span>"	
+	document.getElementById("Mapa").innerHTML += "<span class='Venezuela'><a href='link' class='LinkMapa'>Venezuela</a></span>"	
+		document.getElementById("Mapa").innerHTML += "<span class='Peru'><a href='link' class='LinkMapa'>Peru</a></span>"
+	
+}else if (bar=="AmericaCentral") {
+	document.getElementById("Mapa").innerHTML += "<span class='ContinentesCentralizados'><a href='Link'><img src='Img/AmericaCentralDestaque.png' alt='America Central' id='AmericaCentral'></a></div></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Panama'><a href='link' class='LinkMapa'>Panama</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='CostaRica'><a href='link' class='LinkMapa'>CostaRica</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Nicaragua'><a href='link' class='LinkMapa'>Nicaragua</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Honduras'><a href='link' class='LinkMapa'>Honduras</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='ElSalvador'><a href='link' class='LinkMapa'>El Salvador</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Guatemala'><a href='link' class='LinkMapa'>Guatemala</a></span>"
+    document.getElementById("Mapa").innerHTML += "<span class='Belize'><a href='link' class='LinkMapa'>Belize</a></span>"	
+}else if (bar=="Europa") {
+	document.getElementById("Mapa").innerHTML += "<span class='ContinentesCentralizadosEuropa'><a href='Link'><img src='Img/EuropaDestaque.png' alt='Europa' id='Europa'></a></div></span>"
+    document.getElementById("Mapa").innerHTML += "<span class='Portugal'><a href='link' class='LinkMapa'>Portugal</a></span>"
+    document.getElementById("Mapa").innerHTML += "<span class='Espanha'><a href='link' class='LinkMapa'>Espanha</a></span>"
+    document.getElementById("Mapa").innerHTML += "<span class='ReinoUnido'><a href='link' class='LinkMapa'>Reino Unido</a></span>"	
+    document.getElementById("Mapa").innerHTML += "<span class='Alemanha'><a href='link' class='LinkMapa'>Alemanha</a></span>"	
+    document.getElementById("Mapa").innerHTML += "<span class='Italia'><a href='link' class='LinkMapa'>Italia</a></span>"	
+    document.getElementById("Mapa").innerHTML += "<span class='Franca'><a href='link' class='LinkMapa'>Fran&ccedil;a</a></span>"	
+    document.getElementById("Mapa").innerHTML += "<span class='Holanda'><a href='link' class='LinkMapa'>Holanda</a></span>"	
+    document.getElementById("Mapa").innerHTML += "<span class='Austria'><a href='link' class='LinkMapa'>Austria</a></span>"						
+    document.getElementById("Mapa").innerHTML += "<span class='Belgica'><a href='link' class='LinkMapa'>Belgica</a></span>"							
+}else if (bar=="Asia") {
+	document.getElementById("Mapa").innerHTML += "<span class='ContinentesCentralizados'><a href='Link'><img src='Img/AsiaDestaque.png' alt='Asia' id='Asia'></a></div></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Russia'><a href='link' class='LinkMapa'>Russia</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='China'><a href='link' class='LinkMapa'>China</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='India'><a href='link' class='LinkMapa'>India</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Mongolia'><a href='link' class='LinkMapa'>Mongolia</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Israel'><a href='link' class='LinkMapa'>Israel</a></span>"	
+}else if (bar=="Australia") {	
+    document.getElementById("Mapa").innerHTML += "<span class='ContinentesCentralizados'><a href='Link'><img src='Img/AustraliaDestaque.png' alt='Australia' id='Australia'></a></div></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='Australia'><a href='link' class='LinkMapa'>Australia</a></span>"
+	document.getElementById("Mapa").innerHTML += "<span class='NovaZelandia'><a href='link' class='LinkMapa'>Nova Zelândia</a></span>"	
+}else if (bar=="Africa") {	
+document.getElementById("Mapa").innerHTML += "<span class='ContinentesCentralizados'><a href='Link'><img src='Img/AfricaDestaque.png' alt='Africa' id='Africa'></a></div></span>"
+
+}
+	
+
+
+}
+				
+				</script>
+                
+               
+               
+               
+  <div id="MapaReferencia">
+  
+  <a href="Index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('MapaMundi','','Img/MapaMundiMiniV2.png',1)"><img src="Img/MapaMundiMini.png" alt="Voltar" width="397" height="193" id="MapaMundi"></a>
+  
+  
+  </div>              
+               
+        
+        
+
+        
+        
+
+                                
+                
+                
+                
+                </article>
+
+            </section>   
+             
+   
+            <footer>
+            
+            <center>
+            <img src="Img/LIA.png">
+            </center>
+                
+            </footer>    
+    </div>
+</body>
+ 
+</html>
+
+

@@ -1,0 +1,5 @@
+Hospedagem: UfscarnoMundo
+
+ftp.pleskwin54.hospedagemdesites.ws
+login: ufscarjunia
+senha: %IHC2014%

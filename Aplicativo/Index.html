@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+        <title>DC no Mundo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css">
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+        </script>
+        
+        
+        
+        
+        
+        
+    </head>
+     
+     
+    <body onLoad="MM_preloadImages('Img/AmericaSulV2.png','Img/AmericaNorteV2.png','Img/AmericaCentralV2.png','Img/AfricaV2.png','Img/EuropaV2.png','Img/AsiaV2.png','Img/AustraliaV2.png')">
+  
+        
+        
+        
+        
+        
+        
+        <div id="site">
+            <header id="topo">
+                
+                 <center>
+                  <table width="260" border="0" cellspacing="2" cellpadding="2" align="center">
+                    <tr>
+                      <td><img src="Img/DCnomundoMini.png"></td>
+                    </tr>
+                  </table>
+                  </center>
+                  
+             
+          </header>
+             
+
+            <section id="conteudo">
+                <header>
+                    <h2><span class="TextoSubTitulo">Clique e explore o nosso mapa</span></h2>
+                    
+              </header>
+             
+                <article>
+                
+                <div id="Mapa">
+                
+                <!--<img src="Img/MapaMundi.png" width="1128" height="548" usemap="#Map">
+                
+                <map name="Map">
+                  <area shape="poly" coords="226,271,227,271,206,286,203,306,195,320,193,333,197,347,206,362,215,378,223,384,234,391,239,404,242,443,243,462,254,492,260,517,268,526,276,532,279,525,282,512,279,490,283,480,294,473,297,465,302,458,308,448,314,439,315,431,320,421,324,416,344,407,349,380,349,373,363,351,363,343,297,299,261,281,239,274" href="#">
+                </map> 
+                 <map name="Map">
+                </map>
+                -->
+                <span class="AmericaNorte">
+                <a href="ContinenteShow.html?Continente=AmericaNorte" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('AmericaNorte','','Img/AmericaNorteV2.png',1)"><img src="Img/AmericaNorte.png" alt="America do Norte" name="AmericaNorte"  id="AmericaNorte"></a> 
+                </span>
+                
+                <span class="AmericaCentral">
+                <a href="ContinenteShow.html?Continente=AmericaCentral" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('AmericaCentral','','Img/AmericaCentralV2.png',1)"><img src="Img/AmericaCentral.png" id="AmericaCentral"></a> 
+                </span>
+                
+                
+                
+                <span class="AmericaSul">
+                <a href="ContinenteShow.html?Continente=AmericaSul" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('AmericaDoSul','','Img/AmericaSulV2.png',1)"><img src="Img/AmericaSul.png" alt="América do Sul" name="AmericaDoSul" width="177" height="289" id="AmericaDoSul"></a>
+                </span>
+                
+                
+                <span class="AbricaCSS">
+                <a href="ContinenteShow.html?Continente=Africa" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Africa','','Img/AfricaV2.png',1)"><img src="Img/Africa.png" alt="Africa" width="255" height="294" id="Africa"></a></span>
+                
+                
+                
+                
+                <span class="EuropaCSS">
+                <a href="ContinenteShow.html?Continente=Europa" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Europa','','Img/EuropaV2.png',1)"><img src="Img/Europa.png" alt="Europa" width="253" height="166" id="Europa"></a> </span>
+                
+                
+                
+                
+                <span class="AsiaCSS">
+                <a href="ContinenteShow.html?Continente=Asia" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Asia','','Img/AsiaV2.png',1)"><img src="Img/Asia.png" alt="Asia" name="Asia" width="449" height="351" id="Asia"></a> </span>
+                
+                
+                
+                
+                <span class="AustraliaCSS">
+                <a href="ContinenteShow.html?Continente=Australia" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Australia','','Img/AustraliaV2.png',1)"><img src="Img/Australia.png" alt="Australia" name="Australia" width="216" height="229" id="Australia"></a> </span>
+                
+                
+                
+                
+                
+<!--                
+                
+      <div id="apDiv1">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="282" height="212">
+                      <param name="movie" value="Flash/Animacao.swf" />
+                      <param name="quality" value="high" />
+                      <embed src="Flash/Animacao.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="282" height="212"></embed>
+</object> 
+ </div>    
+-->
+        
+        
+                  
+                
+                
+                
+                
+                
+    </div>
+                                
+                
+                
+                
+                </article>
+
+            </section>   
+             
+   
+            <footer>
+            
+            <center>
+            <img src="Img/LIA.png">
+            </center>
+                
+            </footer>    
+    </div>
+</body>
+ 
+</html>
+
+

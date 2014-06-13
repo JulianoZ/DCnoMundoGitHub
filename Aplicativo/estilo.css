@@ -1,0 +1,546 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	text-align:center;
+	bocakground:#CCC;
+}
+
+header , footer , article , aside , nav , section {display:block}
+
+
+#site{
+	text-align:left;
+	margin:0px auto;
+	width:1200px;
+}
+
+header#topo{
+	height:55px;
+	background:#E7EBEE;
+}
+
+nav#menu{
+	height:30px;
+	background:#FFFFFF;
+	padding:10px;
+}
+
+nav#menu ul li{
+	list-style: none;
+	display:inline;
+	margin:10px;
+}
+
+section#conteudo{
+	width: 1200px;
+	height:650px;
+	float:left; 	
+	background:#FFFFFF;
+	padding:0px;
+	
+}
+
+section#conteudo header{
+	background:#FFFFFF;
+}
+
+section#conteudo article{
+	height:600px;
+	background:#FFFFFF;
+}
+section#conteudo footer{
+	background:#341234;
+	height:30px;	
+}
+
+aside{
+	background:#345678;	
+	height:620px;
+	width:280px;
+	float:left;
+}
+
+
+
+footer{
+	background:#E7EBEE;
+	height:50px;
+	clear:both
+}
+
+
+
+.AmericaSul{
+position: relative;
+top: 259px;
+left:-495px;
+/*float:left;*/
+}
+
+.AmericaNorte{
+position: relative;
+top: -20px;
+left:0px;
+/*float:left;*/
+}
+
+
+
+.AmericaCentral{
+position: relative;
+top: 9px;
+left:-407px;
+/*float:left;*/	
+	
+}
+
+
+.AbricaCSS{
+position: relative;
+top: 170px;
+left:-500px;
+z-index:3;
+/*float:left;*/	
+	
+}
+
+
+
+
+.EuropaCSS{
+position: relative;
+top: -470px;
+left: 447px;
+z-index:2;
+/*float:left;*/	
+	
+}
+
+
+.AsiaCSS{
+position: relative;
+top: -286px;
+left:335px;
+z-index:1;
+/*float:left;*/	
+	
+}
+
+
+.AustraliaCSS{
+position: relative;
+top: -128px;
+left:200px;
+/*float:left;*/	
+	
+}
+
+
+.ContinentesCentralizados{
+position: relative;
+top: -100px;
+left:10px;
+/*float:left;*/	
+	
+}
+
+
+
+#Mapa {
+	width: 1200px;
+	height:600px;
+	/*float: right;
+	border:double;*/
+	padding: 0px;
+	min-height: 466px;
+	text-align: justify;
+}
+
+
+
+
+#apDiv1 {
+	position: relative;
+	left: 615px;
+	top: -200px;
+	width: 315px;
+	height: 290px;
+	z-index: 3;
+}
+
+
+
+.TextoTitulo {
+	font-family: verdana;
+	font-size: 22px;
+	color: #333333;
+	font-weight: bold;
+}
+
+.TextoSubTitulo {
+	font-family: verdana;
+	font-size: 12px;
+	color: #333333;
+	font-weight: bold;
+}
+
+.Texto {
+	font-family: verdana;
+	font-size: 12px;
+	color: #333333;
+}
+
+.TextoInformativo{
+	text-align:justify;
+	margin:0px auto;
+	width:500px;
+}
+
+
+/*------------------------Posicionamento de links---------------------------------------------------------------*/
+#MapaReferencia {
+	position:relative;
+	left: 800px;
+	top: 0px;	
+	width: 400px;
+	height:195px;
+	padding: 0px;
+}
+
+.ContinentesCentralizadosAmericaSul{
+position: relative;
+top: -150px;
+left:250px;
+/*float:left;*/	
+	
+}
+
+
+
+.ContinentesCentralizadosEuropa{
+position: relative;
+top: -190px;
+left:100px;
+/*float:left;*/	
+	
+}
+.LinkMapa:active { 
+font-family: tahoma; font-size: 14px; color: #CCC; text-decoration: none; font-weight: bold;
+text-shadow:0.1em 0.1em #333;
+}
+.LinkMapa:link { 
+font-family: tahoma; font-size: 14px; color: #CCC; text-decoration: none; font-weight: bold;
+text-shadow:0.1em 0.1em #333;
+}
+.LinkMapa:hover { font-family: tahoma; font-size: 14px; color: #FFF; text-decoration: none; font-weight: bold;}
+.LinkMapa:visited { font-family: tahoma; font-size: 14px; color: #333333; text-decoration: none; font-weight: bold;}
+
+/* America do Norte*/
+.Canada{
+position: relative;
+top: -360px;
+left:-480px;
+z-index:1;
+}
+
+.EstadosUnidos{
+position: relative;
+top: -250px;
+left:-580px;
+z-index:1;
+}
+
+.Mexico{
+position: relative;
+top: -150px;
+left:-690px;
+z-index:1;
+}
+/* America do Norte*/
+
+
+/* America do Sul*/
+
+.Brasil{
+position: relative;
+top: -500px;
+left:120px;
+z-index:1;
+}
+
+.Argentina{
+position: relative;
+top: -300px;
+left:-10px;
+z-index:1;
+}
+
+.Colombia{
+position: relative;
+top: -630px;
+left:-170px;
+z-index:1;
+}
+
+.Peru{
+position: relative;
+top: -630px;
+left:-170px;
+z-index:1;
+}
+
+.Venezuela{
+position: relative;
+top: -656px;
+left:-450px;
+z-index:1;
+}
+
+.Peru{
+position: relative;
+top: -520px;
+left:-570px;
+z-index:1;
+}
+
+.Equador{
+position: relative;
+top: -580px;
+left:-500px;
+z-index:1;
+}
+
+.Bolivia{
+position: relative;
+top: -460px;
+left:-320px;
+z-index:1;
+}
+
+.Paraguay{
+position: relative;
+top: -400px;
+left:-210px;
+z-index:1;
+}
+
+
+.Uruguai{
+position: relative;
+top: -320px;
+left:-90px;
+z-index:1;
+}
+
+.Chile{
+position: relative;
+top: -400px;
+left:-190px;
+z-index:1;
+}
+
+
+/* America do Sul*/
+
+
+
+
+
+
+
+/* America Central*/
+
+.Panama{
+position: relative;
+top: -150px;
+left:-180px;
+z-index:1;
+}
+
+.CostaRica{
+position: relative;
+top: -220px;
+left:-360px;
+z-index:1;
+}
+
+.Nicaragua{
+position: relative;
+top: -300px;
+left:-470px;
+z-index:1;
+}
+
+.Honduras{
+position: relative;
+top: -420px;
+left:-580px;
+z-index:1;
+}
+
+.ElSalvador{
+position: relative;
+top: -350px;
+left:-740px;
+z-index:1;
+}
+
+.Guatemala{
+position: relative;
+top: -420px;
+left:-880px;
+z-index:1;
+}
+
+.Belize{
+position: relative;
+top: -500px;
+left:-865px;
+z-index:1;
+}
+
+/* America Central*/
+
+
+
+
+
+/* America Central*/
+
+.Portugal{
+position: relative;
+top: -350px;
+left:-460px;
+z-index:1;
+}
+
+.Espanha{
+position: relative;
+top: -330px;
+left:-430px;
+z-index:1;
+}
+
+.ReinoUnido{
+position: relative;
+top: -540px;
+left:-420px;
+z-index:1;
+}
+
+.Alemanha{
+position: relative;
+top: -480px;
+left:-380px;
+z-index:1;
+}
+
+.Italia{
+position: relative;
+top: -350px;
+left:-428px;
+z-index:1;
+}
+
+.Franca{
+position: relative;
+top: -420px;
+left:-580px;
+z-index:1;
+}
+
+.Holanda{
+position: relative;
+top: -515px;
+left:-550px;
+z-index:1;
+}
+
+.Austria{
+position: relative;
+top: -420px;
+left:-520px;
+z-index:1;
+}
+
+.Belgica{
+position: relative;
+top: -485px;
+left:-700px;
+z-index:1;
+}
+
+/* America Central*/
+
+
+
+/* Asia*/
+
+.Russia{
+position: relative;
+top: -500px;
+left:-300px;
+z-index:1;
+}
+
+.China{
+position: relative;
+top: -340px;
+left:-270px;
+z-index:1;
+}
+
+.India{
+position: relative;
+top: -270px;
+left:-420px;
+z-index:1;
+}
+
+.Mongolia{
+position: relative;
+top: -400px;
+left:-395px;
+z-index:1;
+}
+
+.Israel{
+position: relative;
+top: -350px;
+left:-720px;
+z-index:1;
+}
+
+
+
+/* Asia*/
+
+
+/* Australia*/
+
+.Australia{
+position: relative;
+top: -250px;
+left:-450px;
+z-index:1;
+}
+
+.NovaZelandia{
+position: relative;
+top: -130px;
+left:-270px;
+z-index:1;
+}
+
+
+
+
+
+
+/* Australia*/
