@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jVectorMap demo</title>
+  <link rel="stylesheet" href="jquery-jvectormap-1.0.css" type="text/css" media="screen"/>
+  <script src="jquery-1.8.2.js"></script>
+  <script src="jquery-jvectormap-1.0.min.js"></script>
+  <script src="jquery-jvectormap-world-mill-en.js"></script>
+  
+  
+  
+<!-- -----------------------Compontentes para ZoomIN e ZoomOUT ------------------------- -->
+
+  <script src="jq/jquery-jvectormap.js"></script>  
+  <script src="jq/jquery-mousewheel.js"></script>
+  
+   
+  <script src="../lib/abstract-element.js"></script>
+  <script src="../lib/abstract-canvas-element.js"></script>
+  
+  
+  <script src="../lib/abstract-shape-element.js"></script>
+   <script src="../lib/svg-element.js"></script>   
+  <script src="../lib/svg-group-element.js"></script> 
+
+
+  <script src="../lib/svg-canvas-element.js"></script>
+  <script src="../lib/svg-shape-element.js"></script>
+  <script src="../lib/svg-path-element.js"></script>
+  <script src="../lib/vector-canvas.js"></script>
+  
+<!-- -----------------------Compontentes para ZoomIN e ZoomOUT ------------------------- -->    
+  
+  
+
+  
+  
+
+  
+
+</head>
+<body bgcolor="#FFFFFF">
+  <div id="world-map" style="width: 1001px; height: 667px"></div>
+  <button id="focus-init">Retorna ao MAPA COMPLETO</button>
+  
+  
+  
+  
+  
+  <script>
+    $(function(){
+     //$('#world-map').vectorMap();
+	 
+
+//----------------------------------------------------Zoom no país	 
+$('#focus-init').click(function(){
+        $('#world-map').vectorMap('set', 'focus', 1, 0, 0);
+});
+//----------------------------------------------------Zoom no país	 
+	 
+
+
+
+
+var gdpData = {  //Colocar informação de alunos em cada país. Ativada pela função onRegionLabelShow
+  "BR": 'Brazil :: DC-UFSCAR',
+  "US": '15 Alunos',
+  "RU": '23 Alunos',
+};	
+
+
+
+var myCustomColors = { //Customizar as cores de cada país de forma dinâmica ou manual
+        'AU': '#FFFF00',
+        'US': '#FFFF55',
+        'RU': '#89AFBF',
+        'BR': '#817F8E',
+        'JP': '#FFF000',		
+};	 
+
+
+
+		 
+    map = new jvm.WorldMap({   //Função map responsável em ativar as cores no mapa
+        map: 'world_mill_en',
+        container: $('#world-map'),
+        backgroundColor: '#AFD3F3',  //Cor de fundo do mapa
+        series: {
+            regions: [{
+                attribute: 'fill'}]
+        },
+		
+
+		
+focusOn: { //Amplia ou reduz o mapa inicial
+          x: 0.5,
+          y: 0.5,
+          scale: 1
+},		
+		
+		
+		
+ onRegionLabelShow: function(e, el, code){ //Função para apresentar os dados para cada país
+      el.html(el.html()+' (Alunos - '+gdpData[code]+')');
+ },
+ 
+ 
+ 
+ 
+//Função para dar uma ação nos cliques do mapa 
+onRegionClick: function(event, code){   //Chamada de link através dos cliques no mapa  
+
+/*                       if (code == "US") {
+							//window.location = 'http://www.terra.com.br'
+							$('#world-map').vectorMap('set', 'focus', 'US');
+						}
+                        if (code == "RU") {
+							$('#world-map').vectorMap('set', 'focus', 'RU');
+						}
+                        if (code == "BR") {
+							$('#world-map').vectorMap('set', 'focus', 'BR');							
+						}
+                        if (code == "JP") {
+							$('#world-map').vectorMap('set', 'focus', 'JP');
+						}
+                        if (code == "AU") {
+						    $('#world-map').vectorMap('set', 'focus', 'AU');
+						}
+*/
+
+$('#world-map').vectorMap('set', 'focus', code);  //Destacando o pais de acordo com o clique
+						
+},
+
+
+
+
+
+markerStyle: {
+      initial: {
+        fill: '#4998E3',  //Cor de fundo das marcações
+        stroke: '#383f47', //Cor de preenchimento
+		r: 10 //diametro do raio
+      }
+    },
+	
+   markers: [      
+      {latLng: [-20, 10], name: 'Departamento de Computação - UFSCAR'}, 
+	  {latLng: [-20, -50], name: 'SIMENS'}, 
+    ]	
+
+		
+		
+		
+		
+    });  //Fecha função map
+
+    map.series.regions[0].setValues(myCustomColors); //Chama o mapa e aplica a série de alterações de cores conforme a var myCustomColors	
+	
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+/*	 
+
+//----------------------------------------------------------------Código funcionando
+ $('#world-map').vectorMap({
+	 
+	 
+	 
+    map: 'world_mill_en',
+    normalizeFunction: 'polynomial',
+    backgroundColor: '#0098E3',
+	hoverOpacity: 0.1,
+    
+	series: {
+		
+		regions: [{values: {"US" : "#FFFF55"},attribute: 'fill'}],	
+		
+		},
+   
+
+ onRegionLabelShow: function(e, el, code){ //Função para apresentar os dados na tela
+    el.html(el.html()+' (Alunos - '+gdpData[code]+')');
+ }
+	
+});	 
+ */	 
+//----------------------------------------------------------------Código funcionando	 
+	 
+
+  
+	  
+	  
+    });
+	
+	
+	
+	
+
+
+
+
+  </script>
+</body>
+</html>

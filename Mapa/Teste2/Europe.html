@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jVectorMap demo</title>
+  <link rel="stylesheet" href="jquery-jvectormap-1.0.css" type="text/css" media="screen"/>
+  <script src="jquery-1.8.2.js"></script>
+  <script src="jquery-jvectormap-1.0.min.js"></script>
+  <script src="jquery-jvectormap-world-mill-en.js"></script>
+  <script src="europe-mill.js"></script>
+  
+  
+  
+  
+  
+  
+      <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-941940-28']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>  
+  
+  
+</head>
+<body>
+  <div id="map" style="width: 600px; height: 400px"></div>
+  <script>
+   
+   
+/*   
+    $(function(){
+      $('#map').vectorMap();
+    });
+*/	
+	
+	
+	
+	
+	
+$(function(){
+  $('#map').vectorMap({
+    map: 'europe_mill_en',
+    scaleColors: ['#C8EEFF', '#0071A4'],
+    normalizeFunction: 'polynomial',
+    hoverOpacity: 0.2,
+    hoverColor: false,
+	
+    markerStyle: {
+      initial: {
+        fill: '#4998E3',  //Cor de fundo das marcações
+        stroke: '#383f47', //Cor de preenchimento
+		r: 10 //diametro do raio
+      }
+    },
+    backgroundColor: '#4998E3',  //Cor de fundo do mapa
+    markers: [
+    
+      {latLng: [-33, -30], name: 'Departamento de Computa&ccedil;&atilde;o - UFSCAR'},
+ 
+    ]
+  });
+}); 	
+	
+	
+  </script>
+	
+	
+	
+	
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
